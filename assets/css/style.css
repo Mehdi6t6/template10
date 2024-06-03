@@ -1,0 +1,82 @@
+@font-face {
+    font-family: shabnam;
+    src: url("./../font/shabnam/Shabnam.ttf"); 
+}
+body{
+    background-color: white;
+    font-family: shabnam;
+    font-size: 16px;
+}
+
+.headerContainer{
+    font-size: 1em;
+    border:none;
+    background-color:rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+}
+.headerContainer > div{
+    padding: 10px;
+    text-align: center;
+}
+.logo{
+    background-color:white;
+    text-align: center;
+}
+.main{
+    background-color:rgb(255, 255, 255);
+    margin-top: 10px;
+   
+}
+.search{
+    background-color:white;
+}
+.child{
+    padding: 5px;
+}
+
+.headerContainer{
+    display: flex;
+    flex-direction: row-reverse;
+   justify-content: space-between;
+    
+}
+
+.main{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+.logoPic{
+    width: 60px;
+    margin-top: 15px;
+   align-items: center;
+}
+.search{
+    order:1;}
+
+
+
+    .line2{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+.date{
+    
+
+}
+.text{
+    font-size: 1em;
+    font-weight: 600;
+ 
+}
+.todaynews{
+    border: 1px solid rgb(204, 204, 204);
+    color:rgb(145, 145, 145);
+     border-radius: 20px;
+     font-size: 14px;
+     padding: 2px 15px;
+}
