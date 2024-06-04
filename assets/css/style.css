@@ -1,82 +1,255 @@
 @font-face {
     font-family: shabnam;
-    src: url("./../font/shabnam/Shabnam.ttf"); 
+    src: url("./../font/shabnam/Shabnam.ttf");
 }
-body{
+
+body {
     background-color: white;
     font-family: shabnam;
     font-size: 16px;
 }
 
-.headerContainer{
-    font-size: 1em;
-    border:none;
-    background-color:rgb(255, 255, 255);
+
+.headerContainer>div {
     padding: 10px;
     text-align: center;
 }
-.headerContainer > div{
-    padding: 10px;
+
+.logo {
+    background-color: white;
     text-align: center;
 }
-.logo{
-    background-color:white;
-    text-align: center;
-}
-.main{
-    background-color:rgb(255, 255, 255);
+
+.main {
+    background-color: rgb(255, 255, 255);
     margin-top: 10px;
-   
+
 }
-.search{
-    background-color:white;
+
+.search {
+    background-color: white;
 }
-.child{
+
+.child {
     padding: 5px;
 }
 
-.headerContainer{
+.headerContainer {
     display: flex;
     flex-direction: row-reverse;
-   justify-content: space-between;
-    
+    justify-content: space-between;
+    font-size: 1em;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+
 }
 
-.main{
+.main {
     display: flex;
     flex-direction: row-reverse;
-    
+
 }
 
-.logoPic{
+.logoPic {
     width: 60px;
     margin-top: 15px;
-   align-items: center;
+    align-items: center;
 }
-.search{
-    order:1;}
 
-
-
-    .line2{
-        display: flex;
-        justify-content: space-between;
-    }
-
-
-.date{
-    
-
+.search {
+    order: 1;
 }
-.text{
+
+
+
+.line2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.text {
     font-size: 1em;
     font-weight: 600;
- 
+
 }
-.todaynews{
+
+.todaynews {
     border: 1px solid rgb(204, 204, 204);
-    color:rgb(145, 145, 145);
-     border-radius: 20px;
-     font-size: 14px;
-     padding: 2px 15px;
+    color: rgb(145, 145, 145);
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 2px 15px;
+}
+
+
+.weather {
+
+
+    height: 550px;
+    overflow: auto;
+
+}
+
+/* ---------------------------------------------------- */
+.column {
+    float: left;
+}
+
+/* Left and right column */
+.column.side {
+    width: 25%;
+    /* background-color: blue; */
+    height: 100%;
+
+}
+
+/* Middle column */
+.column.middle {
+    position: relative;
+    width: 75%;
+
+    height: 100%;
+}
+
+.picmain {
+    height: 100%;
+    width: 100%;
+    /* margin: 20px; */
+    border-radius: 30px;
+    padding: 0 0 0 10px;
+}
+
+.onmiddlepic {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: auto;
+    padding: 8px;
+    justify-self: center;
+}
+
+.midtext {
+    display: flex;
+    background-color: rgb(198, 196, 196);
+    position: absolute;
+    left: 50px;
+    right: 50px;
+    bottom: 30px;
+    color: white;
+    justify-content: space-between;
+    border-radius: 10px;
+    height: 60px;
+    align-items: center;
+}
+
+.left {
+    padding: 12px;
+    padding-top: 20px;
+}
+
+.rght {
+    padding-top: 2px;
+}
+
+.top {
+    /* background-color: rgb(255, 255, 255); */
+    height: 265px;
+    border-radius: 15px;
+    text-align: center;
+    border: 3px solid rgb(235, 235, 235);
+    margin: 0 0 20px 0;
+}
+
+.bottom {
+    /* background-color: brown; */
+    height: 265px;
+    border-radius: 15px;
+    margin: 10px 0 0 0;
+    border: 3px solid rgb(235, 235, 235);
+    text-align: center;
+
+}
+
+.line {
+    background-color: rgb(196, 196, 196);
+    height: 1px;
+    margin: 0 40px 0 40px;
+}
+
+.fontSizeS {
+    font-size: 15px;
+    margin-top: 0;
+    font-weight: 900;
+    color: rgb(102, 99, 99);
+}
+
+.fontSizeL {
+    font-size: 30px;
+    padding: 1px;
+    margin: 0;
+}
+
+.fontSizeM {
+    font-size: 19px;
+    font-weight: 900;
+}
+
+.datetime {
+    border: 1px solid rgb(230, 230, 230);
+    margin: 13px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 14px;
+   font-weight: 900;
+
+}
+.textSpan{
+    margin: 5px;
+}
+/* part 3 */
+.hotnews{
+
+     display: flex;
+      text-align: right;
+       align-items: center;
+       margin: 20px;
+}
+.hotnewstitr{
+    width: 50%;
+    font-size: 30px;
+   font-weight: 900;
+}
+.contText{
+    background-color: rgb(194, 204, 192);
+    /* aspect-ratio: 16/9 ; */
+    height: 550px;
+    display: flex;
+    /* justify-content: end; */
+    padding: 10px;
+}
+.r{
+    background-color: aquamarine; width: 65%;
+
+}
+.l{
+     width: 35%;
+    font-size: 17px;
+    padding: 1px;
+    margin: 0;
+}
+.t{
+    height: 33.33%;
+    background-color: blueviolet;
 }
